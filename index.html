@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. X</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d153629189.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!---Nav Ber-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/wa.link_6u24n8.png" class="logo" alt="" srcset="">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Serivces</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <!---Head Text-->
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi! <br> I'm <span>Mr. X</span> <br> from BD.</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------About------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://shorturl.at/hlGN8" alt="" srcset="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi velit quidem et aliquam, deserunt blanditiis consequatur minus dolorem provident esse aut, alias delectus. Quia sequi iure fuga temporibus consequatur laboriosam.</p>
+
+                    <div class="tab-titels">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Design/Development</span><br>Landing page website design.</li>
+                            <li><span>Game Development</span><br>2D Game Devlopment with Unity/Unreal.</li>
+                            <li><span>App Development</span><br>Android App Development with Java & Android Studio.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                            <li><span>2022-2023</span><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae?</li>
+                            <li><span>2020-2022</span><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, inventore.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BSc. in CSE-Current</span><br>World University of Bangladesh.</li>
+                            <li><span>HSC-2020</span><br>Milestone College, Uttara.</li>
+                            <li><span>SSC-2018</span><br>Tongi Pilot High School.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------Services------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code fa-beat-fade" style="color: #ff0000;"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis labore itaque corrupti maiores vel architecto. Tempora vitae veniam ea harum?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad fa-beat-fade" style="color: #fa0000;"></i>
+                    <h2>Game Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis labore itaque corrupti maiores vel architecto. Tempora vitae veniam ea harum?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android fa-beat-fade" style="color: #ff0000;"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis labore itaque corrupti maiores vel architecto. Tempora vitae veniam ea harum?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------Portfolio---------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-link fa-flip" style="color: #ff0000;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Android App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-link fa-flip" style="color: #ff0000;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-link fa-flip" style="color: #ff0000;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tablcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tablcontent of tablcontents) {
+                tablcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
