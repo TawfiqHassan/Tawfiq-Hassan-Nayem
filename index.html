@@ -15,13 +15,15 @@
         <div class="container">
             <nav>
                 <img src="images/wa.link_6u24n8.png" class="logo" alt="" srcset="">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Serivces</a></li>
                     <li><a href="">Portfolio</a></li>
                     <li><a href="">Contact</a></li>
+                    <i class="fas fa-solid fa-x fa-flip" style="color: #a80000;" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-solid fa-bars fa-fade" style="color: #ff0000;" onclick="openmenu()"></i>
             </nav>
             <!---Head Text-->
             <div class="header-text">
@@ -186,7 +188,17 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
 
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 </body>
 
 </html>
